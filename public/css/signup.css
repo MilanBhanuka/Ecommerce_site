@@ -32,6 +32,7 @@
   input[type="text"],
   input[type="password"],
   input[type="email"],
+  input[type="number"],
   textarea{
       display: block;
       width: 300px;
@@ -71,7 +72,7 @@
   /* checkbox styles */
   
   .checkbox{
-      -webkit-appearance: none;
+      --webkit-appearance: none;
       position: relative;
       width: 15px;
       height: 15px;
@@ -138,6 +139,8 @@
       opacity: 0;
       pointer-events: none;
       transition: 1s;
+      position: fixed;
+    z-index: 2;
   }
   
   .alert-box.show{
@@ -160,3 +163,7 @@
       line-height: 30px;
       font-weight: 500;
   }
+
+.loader{
+    position: fixed;
+}
